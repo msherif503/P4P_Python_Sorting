@@ -14,19 +14,13 @@ The **Drone Picture Organizer** is a Python script designed to organize drone im
 - **Customizable Time Threshold**: Allows customization of the time threshold to define separate flights.
 - **User-Friendly**: Easy to set up and run with minimal configuration.
 
+
 ## Installation
 
-1. **Clone the Repository**:
-    ```bash
-    git clone https://github.com/YourUsername/DroneOrganizer.git
-    cd DroneOrganizer
-    ```
+### Prerequisites
 
-2. **Install Dependencies**:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
+- Python 3.x
+- Pillow library
 ## Usage
 
 1. **Prepare Folders**:
@@ -62,17 +56,7 @@ dest_folder
 └── ...
 
 
-## Contributing
-
-We welcome contributions! Please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Commit your changes (`git commit -am 'Add new feature'`).
-4. Push to the branch (`git push origin feature-branch`).
-5. Create a new Pull Request.
-
-
+## Thank you :)
 
 ## Acknowledgments
 
