@@ -1,76 +1,70 @@
-Drone Picture Organizer
-This project organizes drone pictures into folders by date and flight based on the timestamps in their EXIF metadata. Each day's pictures are placed in a separate folder, and within each date folder, there are subfolders for each separate flight.
+# Drone Picture Organizer
 
-Prerequisites
-Python 3.x
-Pillow library
-Installation
-Install Python 3.x:
-Download and install Python from the official Python website. Make sure to check the box that says "Add Python to PATH" during installation.
+![Drone Image](https://example.com/drone_image.jpg) <!-- You can add a relevant image here -->
 
-Install Pillow:
-Open Command Prompt and install the Pillow library by running:
+## Overview
 
-bash
-Copy code
-pip install pillow
-Usage
-Prepare Folders:
+The **Drone Picture Organizer** is a Python script designed to organize drone images by date and flight based on their EXIF metadata. This script sorts the pictures into folders by the day they were taken, and within each day's folder, it creates subfolders for each flight.
 
-Create a folder named DroneOrganizer in C:\Users\moham.
-Inside DroneOrganizer, create two subfolders: source_folder and dest_folder.
-Place all your drone pictures in source_folder.
-Save the Script:
+## Features
 
-Save the provided Python script as organize_drone_pictures.py in C:\Users\moham\DroneOrganizer.
-Run the Script:
+- **Automatic Organization**: Organizes pictures into date-based folders and flight subfolders.
+- **EXIF Metadata Extraction**: Utilizes EXIF data to determine the date and time each picture was taken.
+- **Customizable Time Threshold**: Allows customization of the time threshold to define separate flights.
+- **User-Friendly**: Easy to set up and run with minimal configuration.
 
-Open Command Prompt.
-Navigate to the DroneOrganizer directory:
-bash
-Copy code
-cd C:\Users\moham\DroneOrganizer
-Run the script:
-bash
-Copy code
-python organize_drone_pictures.py
-Script Explanation
-The script performs the following steps:
+## Installation
 
-Extract EXIF Data:
+1. **Clone the Repository**:
+    ```bash
+    git clone https://github.com/YourUsername/DroneOrganizer.git
+    cd DroneOrganizer
+    ```
 
-Extracts the EXIF metadata from each image to get the timestamp.
-Organize Pictures by Date and Flight:
+2. **Install Dependencies**:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-Sorts pictures by their timestamps.
-Groups pictures into flights based on a time threshold (default is 1 minute). If the gap between consecutive pictures is greater than the threshold, it starts a new flight.
-Create Directories and Move Pictures:
+## Usage
 
-Creates folders for each date.
-Within each date folder, creates subfolders for each flight.
-Moves pictures into their respective flight folders.
-Customization
-You can customize the time threshold for determining a new flight by changing the time_threshold_minutes parameter in the script. The default is set to 1 minute.
+1. **Prepare Folders**:
+    - Create `source_folder` and `dest_folder` within the project directory.
+    - Place your drone pictures in the `source_folder`.
 
-Example Folder Structure
-After running the script, the dest_folder will have the following structure:
+2. **Run the Script**:
+    ```bash
+    python organize_drone_pictures.py
+    ```
 
-yaml
-Copy code
-dest_folder
+## Example Folder Structure
+
 ├── 2023-06-01
-│   ├── Flight_01
-│   ├── Flight_02
-│   └── ...
+│ ├── Flight_01
+│ ├── Flight_02
+│ └── ...
 ├── 2023-06-02
-│   ├── Flight_01
-│   ├── Flight_02
-│   └── ...
+│ ├── Flight_01
+│ ├── Flight_02
+│ └── ...
 └── ...
-License
-This project is licensed under the MIT License.
 
-Notes:
-Adjust the source_folder and dest_folder paths as needed in the script.
-Make sure all your drone pictures have proper EXIF metadata with timestamps.
-This README provides a comprehensive guide for setting up and using the script, ensuring it is accessible to beginners.
+
+## Contributing
+
+We welcome contributions! Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -am 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Create a new Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- [DJI](https://www.dji.com/) for creating the Phantom 4 Pro drone.
+- [Pillow](https://python-pillow.org/) for image processing capabilities.
