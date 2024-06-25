@@ -44,14 +44,21 @@ The **Drone Picture Organizer** is a Python script designed to organize drone im
 dest_folder
 
 ├── 2023-06-01
+
 │   ├── Flight_01
+
 │   ├── Flight_02
+
 │   └── ...
 
 ├── 2023-06-02
+
 │   ├── Flight_01
+
 │   ├── Flight_02
+
 │   └── ...
+
 └── ...
 
 
