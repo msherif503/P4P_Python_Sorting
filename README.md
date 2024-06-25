@@ -1,6 +1,7 @@
 # Drone Picture Organizer
 
-![Drone Image](https://example.com/drone_image.jpg) <!-- You can add a relevant image here -->
+
+![P4P+(4)+copy-ed](https://github.com/msherif503/P4P_Python_Sorting/assets/69431662/de3c60fb-0f1e-4175-996d-ba7ec3c17eb8)
 
 ## Overview
 
